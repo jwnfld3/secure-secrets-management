@@ -51,7 +51,6 @@ Storing credentials and sensitive information in code repositories or environmen
 ![image](https://github.com/user-attachments/assets/2273155a-249f-48ee-9719-11242364eaf1)
 ![image](https://github.com/user-attachments/assets/0c44ddcb-50c7-4c9d-916b-fec43f5ec488)
 
-
 ### Step 2: Store a Secret in Azure Key Vault
 **Definition:** Secrets in Azure Key Vault are sensitive information such as passwords, API keys, and connection strings that need to be securely stored and accessed when needed.
 
@@ -66,6 +65,7 @@ Storing credentials and sensitive information in code repositories or environmen
 
 4. Enter the **Name** (e.g., `DBPassword`) and **Value** (e.g., `MyStrongP@ssw0rd`).  
 5. Click **Create**.
+![image](https://github.com/user-attachments/assets/5068ed86-f18c-4aeb-a337-0287ae2ec968)
 
 ### Step 3: Configure Access Control (IAM)
 **Definition:** Access control in Azure Key Vault ensures that only authorized users and applications can retrieve or modify secrets. This step sets the permissions for accessing stored secrets securely.
