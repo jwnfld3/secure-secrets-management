@@ -36,13 +36,21 @@ Storing credentials and sensitive information in code repositories or environmen
 **Definition:** Azure Key Vault is a cloud service that securely stores and controls access to secrets, encryption keys, and certificates. Creating a Key Vault ensures that sensitive information remains protected from unauthorized access.
 
 1. Open the Azure portal and navigate to **Key Vaults**.  
+![image](https://github.com/user-attachments/assets/86117e64-f788-4616-9cbf-78dfb330c012)
+
 2. Click **Create** and configure the following:  
-   - **Subscription:** Select the free-tier subscription.  
+![image](https://github.com/user-attachments/assets/bed9eb28-fab2-4cc7-9857-d109a982afe0)
+
+    - **Subscription:** Select the free-tier subscription.  
    - **Resource Group:** Create a new resource group or use an existing one.  
    - **Key Vault Name:** Enter a globally unique name.  
    - **Region:** Choose the appropriate Azure region.  
    - **Pricing Tier:** Select **Standard** (free-tier supports basic features).  
-3. Click **Review + Create** and then **Create**.
+4. Click **Review + Create** and then **Create**.
+![image](https://github.com/user-attachments/assets/4ab1ea07-751c-4ba1-a0fa-914bcc7facaa)
+![image](https://github.com/user-attachments/assets/2273155a-249f-48ee-9719-11242364eaf1)
+![image](https://github.com/user-attachments/assets/0c44ddcb-50c7-4c9d-916b-fec43f5ec488)
+
 
 ### Step 2: Store a Secret in Azure Key Vault
 **Definition:** Secrets in Azure Key Vault are sensitive information such as passwords, API keys, and connection strings that need to be securely stored and accessed when needed.
@@ -50,9 +58,14 @@ Storing credentials and sensitive information in code repositories or environmen
 **Definition:** An API (Application Programming Interface) is a set of protocols and tools that allow different software applications to communicate. API keys are used to authenticate and authorize access to services and resources.
 
 1. Open the newly created Key Vault.  
-2. Navigate to **Secrets** and click **+ Generate/Import**.  
-3. Enter the **Name** (e.g., `DBPassword`) and **Value** (e.g., `MyStrongP@ssw0rd`).  
-4. Click **Create**.
+2. Navigate to **Objects** and click **Secrets**.
+![image](https://github.com/user-attachments/assets/6b178d0f-3115-4055-a5d1-ee231d4a7ec8)
+3. Click **+Generate/Import**  
+![image](https://github.com/user-attachments/assets/0161b2a8-b79e-4ce8-96ae-3513e4dcf8e5)
+
+
+4. Enter the **Name** (e.g., `DBPassword`) and **Value** (e.g., `MyStrongP@ssw0rd`).  
+5. Click **Create**.
 
 ### Step 3: Configure Access Control (IAM)
 **Definition:** Access control in Azure Key Vault ensures that only authorized users and applications can retrieve or modify secrets. This step sets the permissions for accessing stored secrets securely.
