@@ -71,16 +71,14 @@ Storing credentials and sensitive information in code repositories or environmen
 
 ### Step 3: Retrieve a Secret Using Azure CLI
 **Definition:** The Azure CLI (Command-Line Interface) is a cross-platform tool that allows users to manage Azure resources from a terminal or command prompt using commands. The CLI simplifies automation, scripting, and remote management of Azure services.
+![image](https://github.com/user-attachments/assets/8d55ae91-d8da-4c87-98c8-97f21eb8a278)
 
-1. Open a terminal and authenticate to Azure:  
-   ```sh
-   az login
-   ```  
-2. Retrieve the secret value:  
+1. Retrieve the secret value:  
    ```sh
    az keyvault secret show --name DBPassword --vault-name <YourKeyVaultName> --query value -o tsv
    ```  
-3. The output should display the stored secret value securely.
+2. The output should display the stored secret value securely.
+![image](https://github.com/user-attachments/assets/3caee9db-47eb-4213-8260-4c09cba3e864)
 
 ### Step 5: Secure Access to Secrets
 **Definition:** Implementing additional security measures ensures that secrets stored in Azure Key Vault remain protected against unauthorized access and potential breaches.
