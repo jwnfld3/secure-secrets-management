@@ -69,16 +69,7 @@ Storing credentials and sensitive information in code repositories or environmen
 ![image](https://github.com/user-attachments/assets/809babc4-c3fc-4082-9503-030394b9518c)
 
 
-### Step 3: Configure Access Control (IAM)
-**Definition:** Access control in Azure Key Vault ensures that only authorized users and applications can retrieve or modify secrets. This step sets the permissions for accessing stored secrets securely.
-
-1. Go to the **Access policies** section in the Key Vault.  
-2. Click **+ Create** and assign appropriate permissions:  
-   - **Select principal:** Choose a user, service principal, or managed identity.  
-   - **Secret permissions:** Select **Get, List, Set** for secret management.  
-3. Click **Review + Add**, then **Save**.
-
-### Step 4: Retrieve a Secret Using Azure CLI
+### Step 3: Retrieve a Secret Using Azure CLI
 **Definition:** The Azure CLI (Command-Line Interface) is a cross-platform tool that allows users to manage Azure resources from a terminal or command prompt using commands. The CLI simplifies automation, scripting, and remote management of Azure services.
 
 1. Open a terminal and authenticate to Azure:  
