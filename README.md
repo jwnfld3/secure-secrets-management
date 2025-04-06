@@ -60,12 +60,14 @@ Storing credentials and sensitive information in code repositories or environmen
 2. Navigate to **Objects** and click **Secrets**.
 ![image](https://github.com/user-attachments/assets/6b178d0f-3115-4055-a5d1-ee231d4a7ec8)
 3. Click **+Generate/Import**  
-![image](https://github.com/user-attachments/assets/0161b2a8-b79e-4ce8-96ae-3513e4dcf8e5)
+![image](https://github.com/user-attachments/assets/28989349-4e68-4ccc-8454-de6ce9f41b70)
 
 
 4. Enter the **Name** (e.g., `DBPassword`) and **Value** (e.g., `MyStrongP@ssw0rd`).  
 5. Click **Create**.
-![image](https://github.com/user-attachments/assets/5068ed86-f18c-4aeb-a337-0287ae2ec968)
+![image](https://github.com/user-attachments/assets/f2710bbe-e4ed-4dc1-930a-99321ba031ad)
+![image](https://github.com/user-attachments/assets/809babc4-c3fc-4082-9503-030394b9518c)
+
 
 ### Step 3: Configure Access Control (IAM)
 **Definition:** Access control in Azure Key Vault ensures that only authorized users and applications can retrieve or modify secrets. This step sets the permissions for accessing stored secrets securely.
