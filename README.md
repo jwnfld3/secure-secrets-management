@@ -78,7 +78,8 @@ Storing credentials and sensitive information in code repositories or environmen
    az keyvault secret show --name DBPassword --vault-name <YourKeyVaultName> --query value -o tsv
    ```  
 2. The output should display the stored secret value securely.
-![image](https://github.com/user-attachments/assets/3caee9db-47eb-4213-8260-4c09cba3e864)
+![image](https://github.com/user-attachments/assets/e7771a05-78b0-4c97-a65e-192c81d7d8ae)
+
 
 ### Step 5: Secure Access to Secrets
 **Definition:** Implementing additional security measures ensures that secrets stored in Azure Key Vault remain protected against unauthorized access and potential breaches.
