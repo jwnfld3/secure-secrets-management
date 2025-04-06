@@ -46,7 +46,7 @@ Storing credentials and sensitive information in code repositories or environmen
    - **Key Vault Name:** Enter a globally unique name.  
    - **Region:** Choose the appropriate Azure region.  
    - **Pricing Tier:** Select **Standard** (free-tier supports basic features).  
-4. Click **Review + Create** and then **Create**.
+3. Click **Review + Create** and then **Create**.
 ![image](https://github.com/user-attachments/assets/4ab1ea07-751c-4ba1-a0fa-914bcc7facaa)
 ![image](https://github.com/user-attachments/assets/2273155a-249f-48ee-9719-11242364eaf1)
 ![image](https://github.com/user-attachments/assets/0c44ddcb-50c7-4c9d-916b-fec43f5ec488)
@@ -80,8 +80,7 @@ Storing credentials and sensitive information in code repositories or environmen
 2. The output should display the stored secret value securely.
 ![image](https://github.com/user-attachments/assets/e7771a05-78b0-4c97-a65e-192c81d7d8ae)
 
-
-### Step 5: Secure Access to Secrets
+Secure Access to Secrets (Optional)
 **Definition:** Implementing additional security measures ensures that secrets stored in Azure Key Vault remain protected against unauthorized access and potential breaches.
 
 - Use **Managed Identities** for Azure resources instead of storing credentials in application configurations.  
