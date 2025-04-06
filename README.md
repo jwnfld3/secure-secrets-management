@@ -39,7 +39,7 @@ Storing credentials and sensitive information in code repositories or environmen
 ![image](https://github.com/user-attachments/assets/86117e64-f788-4616-9cbf-78dfb330c012)
 
 2. Click **Create** and configure the following:  
-![image](https://github.com/user-attachments/assets/bed9eb28-fab2-4cc7-9857-d109a982afe0)
+![image](https://github.com/user-attachments/assets/5106f54a-ac99-49bc-94cf-2f61da3d5187)
 
     - **Subscription:** Select the free-tier subscription.  
    - **Resource Group:** Create a new resource group or use an existing one.  
@@ -60,13 +60,14 @@ Storing credentials and sensitive information in code repositories or environmen
 2. Navigate to **Objects** and click **Secrets**.
 ![image](https://github.com/user-attachments/assets/6b178d0f-3115-4055-a5d1-ee231d4a7ec8)
 3. Click **+Generate/Import**  
-![image](https://github.com/user-attachments/assets/28989349-4e68-4ccc-8454-de6ce9f41b70)
+![image](https://github.com/user-attachments/assets/25c2f867-ed03-486d-a65f-d9a70fa55b32)
+
 
 
 4. Enter the **Name** (e.g., `DBPassword`) and **Value** (e.g., `MyStrongP@ssw0rd`).  
 5. Click **Create**.
 ![image](https://github.com/user-attachments/assets/f2710bbe-e4ed-4dc1-930a-99321ba031ad)
-![image](https://github.com/user-attachments/assets/809babc4-c3fc-4082-9503-030394b9518c)
+![image](https://github.com/user-attachments/assets/cc5ca411-f174-474b-bf72-7af450ef7369)
 
 
 ### Step 3: Retrieve a Secret Using Azure CLI
