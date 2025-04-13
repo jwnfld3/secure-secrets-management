@@ -99,11 +99,38 @@ Storing credentials and sensitive information in code repositories or environmen
 ![image](https://github.com/user-attachments/assets/e7771a05-78b0-4c97-a65e-192c81d7d8ae)
 
 Secure Access to Secrets (Optional)
-**Definition:** Implementing additional security measures ensures that secrets stored in Azure Key Vault remain protected against unauthorized access and potential breaches.
+**Managed Identities for Azure resources** provide Azure services with an automatically managed identity in Microsoft Entra ID (Azure AD). This identity can be used to authenticate securely to other services—like Azure Key Vault—without needing to store credentials in application code, environment variables, or configuration files.
 
-- Use **Managed Identities** for Azure resources instead of storing credentials in application configurations.  
-- Enable **Azure Private Link** to restrict Key Vault access to private networks.  
-- Enable **logging and monitoring** with Azure Monitor and Diagnostic settings.
+**Why it matters:**
+- Eliminates the need to manage credentials manually.
+- Enhances security by avoiding hardcoded secrets in source code.
+- Supports both **system-assigned** and **user-assigned** identities for flexible access control.
+
+---
+
+### Enable Azure Private Link to Restrict Key Vault Access to Private Networks
+
+**Azure Private Link** enables private and secure connectivity from virtual networks to Azure Key Vault using a **private endpoint**. This ensures that traffic between the virtual network and the Key Vault remains entirely within the Microsoft backbone network, avoiding exposure to the public internet.
+
+**Why it matters:**
+- Reduces the risk of data exfiltration and exposure to external threats.
+- Provides secure, internal-only access to secrets and keys.
+- Aligns with zero-trust and defense-in-depth security models.
+
+---
+
+### Enable Logging and Monitoring with Azure Monitor and Diagnostic Settings
+
+**Azure Monitor** and **Diagnostic settings** allow for the collection, analysis, and alerting of telemetry data from Azure Key Vault. Logs can be sent to **Log Analytics**, **Event Hubs**, or a **Storage Account** for auditing, troubleshooting, and compliance purposes.
+
+**Why it matters:**
+- Tracks who accessed secrets and when.
+- Detects unusual or unauthorized access attempts.
+- Supports compliance reporting and forensics.
+
+**Common logs enabled:**
+- **AuditEvent**: Logs all access and management operations.
+- **AllMetrics**: Monitors performance and request metrics like latency, success/failure rates, etc.
 
 ---
 
