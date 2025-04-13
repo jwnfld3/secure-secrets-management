@@ -33,7 +33,24 @@ Storing credentials and sensitive information in code repositories or environmen
 ## Steps to Complete This Lab
 
 ### Step 1: Create an Azure Key Vault
-**Definition:** Azure Key Vault is a cloud service that securely stores and controls access to secrets, encryption keys, and certificates. Creating a Key Vault ensures that sensitive information remains protected from unauthorized access.
+**Azure Key Vault** is a cloud service provided by Microsoft that securely stores and manages sensitive information such as **secrets**, **encryption keys**, and **certificates**. It is designed to help safeguard cryptographic keys and secrets used by cloud applications and services.
+
+---
+
+### Key Capabilities:
+- **Secrets Management**: Securely store API keys, passwords, database connection strings, and other confidential information.
+- **Key Management**: Generate and manage encryption keys used for data protection.
+- **Certificate Management**: Provision, manage, and deploy SSL/TLS certificates for secure communication.
+- **Access Control**: Integrates with Azure Active Directory (Microsoft Entra ID) to enforce fine-grained access policies using role-based access control (RBAC) or access policies.
+
+---
+
+### Why It Matters:
+- **Security**: Secrets and keys are stored in a hardware security module (HSM)-backed vault.
+- **Centralized Management**: Provides a centralized and consistent method for managing sensitive information across applications.
+- **Compliance**: Helps meet compliance requirements by keeping audit logs of secret usage and access.
+- **Automation**: Supports integration with scripts, applications, and services through Azure SDKs and REST APIs.
+
 
 1. Open the Azure portal and navigate to **Key Vaults**.  
 ![image](https://github.com/user-attachments/assets/86117e64-f788-4616-9cbf-78dfb330c012)
