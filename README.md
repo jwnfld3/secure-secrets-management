@@ -23,7 +23,7 @@ This lab covers the setup of Azure Key Vault, storing secrets, managing access p
 When handling credentials, API keys, or encryption keys that must be securely stored and accessed in cloud environments.  
 
 ## Where is This Lab Hosted?
-Hosted in Azure; documentation and scripts will be available in GitHub.  
+Hosted in Azure; documentation and scripts are available here.
 
 ## Why is This Important?
 Storing credentials and sensitive information in code repositories or environment variables poses a security risk. Azure Key Vault provides a centralized and secure method for managing and retrieving secrets.
